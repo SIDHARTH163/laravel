@@ -1,0 +1,433 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* welcome page css */
+        
+        .top {
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 5px;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(69, 209, 219, 0.35) 0px 5px 25px;
+        }
+        
+        .pp {
+            background: transparent;
+            color: white;
+        }
+        
+        .card-containar {
+            position: relative;
+        }
+        
+        .cards {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 370px;
+            width: 283px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 10s;
+        }
+        
+        .content {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: 10s;
+            transform-style: preserve-3d;
+        }
+        
+        .top {
+            background-image: linear-gradient( 109.6deg, rgb(19, 73, 134) 16%, rgb(230, 174, 174) 91.1%);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.24s;
+        }
+        
+        .middle {
+            color: whitesmoke;
+            padding: 20px;
+            background: url(https://images.unsplash.com/photo-1520092352425-9699926a9b0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+            background-color: #0e0e0ecb;
+            background-blend-mode: overlay;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateZ(-283px) rotateY(180deg);
+            box-shadow: rgba(69, 209, 219, 0.35) 0px 5px 25px;
+        }
+        
+        .side {
+            color: whitesmoke;
+            background: url(https://images.unsplash.com/photo-1620381537141-a7fcc5fc44dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+            background-color: #1e1930c4;
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(141px) translateZ(-141px) rotateY(90deg);
+            box-shadow: rgba(69, 209, 219, 0.35) 0px 5px 25px;
+        }
+        
+        .side2 {
+            color: whitesmoke;
+            position: absolute;
+            background: url(https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+            background-color: #0e0e0ecb;
+            background-blend-mode: overlay;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-141px) translateZ(-141px) rotateY(270deg);
+            box-shadow: rgba(69, 209, 219, 0.35) 0px 5px 25px;
+        }
+        
+        .card-containar:hover .content {
+            transform: rotateY(-270deg);
+        }
+        
+        .card-containar:hover .cards {
+            transform: translateX(141px);
+        }
+        /* welocome page end here */
+        /* drop */
+        /* drop */
+        
+        .parallax {
+            /* The image used */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 26rem;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-taobao-vector-creative-technology-online-shopping-illustration-computer-finger-poster-image_131803.jpg");
+        }
+        /* circle */
+        
+        .cr {
+            height: 100%;
+            padding-top: 10px;
+        }
+        
+        .cr1 {
+            border-radius: 50%;
+            background-color: white;
+            height: 50%;
+            margin-top: 15%;
+            margin-left: 7rem;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .cr1 {
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-top: 20%;
+            }
+        }
+        /* button */
+        /* .rr {
+            margin-top: 1rem;
+        } */
+        
+        .bs {
+            margin-left: 4rem;
+            margin-top: 5rem;
+            border-radius: 0px;
+        }
+        
+        .bl {
+            border-radius: 0px;
+            width: 120px;
+        }
+        /* cards */
+        
+        h1 {
+            background: #333;
+            color: rgb(10, 10, 10);
+            text-align: center;
+            margin: 0 0 5% 0;
+            padding: 0.5em;
+            margin: 0 0 5% 0;
+        }
+        
+        span {
+            color: black;
+        }
+        
+        .h6 {
+            color: red;
+        }
+        
+        .cardBox {
+            box-shadow: rgba(150, 180, 206, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            float: left;
+            font-size: 1.2em;
+            margin: 1% 0 0 1%;
+            perspective: 800px;
+            transition: all 0.3s ease 0s;
+            width: 23.7%;
+        }
+        
+        .cardBox:hover .card {
+            transform: rotateY( 180deg);
+        }
+        
+        .card {
+            border: none;
+            cursor: default;
+            height: 350px;
+            transform-style: preserve-3d;
+            transition: transform 0.7s ease 0s;
+            width: 100%;
+            -webkit-animation: giro 1s 1;
+            animation: giro 1s 1;
+        }
+        
+        .img-fluid {
+            height: 190px;
+        }
+        
+        .card p {
+            margin-bottom: 1.8em;
+        }
+        
+        .card .front,
+        .card .back {
+            backface-visibility: hidden;
+            box-sizing: border-box;
+            color: rgb(10, 10, 10);
+            display: block;
+            font-size: 1.2em;
+            height: 100%;
+            padding: 0.8em;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .card .front strong {
+            background: #fff;
+            border-radius: 100%;
+            color: #222;
+            font-size: 1.5em;
+            line-height: 30px;
+            padding: 0 7px 4px 6px;
+        }
+        
+        .card .back {
+            transform: rotateY( 180deg);
+        }
+        /* .cardBox:nth-child(1) .card .back {
+      background: cornflowerblue;
+  }
+  
+  .cardBox:nth-child(2) .card .back {
+      background: cornflowerblue;
+  }
+  
+  .cardBox:nth-child(3) .card .back {
+      background: rgb(46, 160, 212);
+  }
+  
+  .cardBox:nth-child(4) .card .back {
+      background: rgb(46, 160, 212);
+  } */
+        
+        .cardBox:nth-child(2) .card {
+            -webkit-animation: giro 1.5s 1;
+            animation: giro 1.9s 1;
+        }
+        
+        .cardBox:nth-child(3) .card {
+            -webkit-animation: giro 2s 1;
+            animation: giro 2.8s 1;
+        }
+        
+        .cardBox:nth-child(4) .card {
+            -webkit-animation: giro 2.5s 1;
+            animation: giro 3.5s 1;
+        }
+        
+        @-webkit-keyframes giro {
+            from {
+                transform: rotateY( 180deg);
+            }
+            to {
+                transform: rotateY( 0deg);
+            }
+        }
+        
+        @keyframes giro {
+            from {
+                transform: rotateY( 180deg);
+            }
+            to {
+                transform: rotateY( 0deg);
+            }
+        }
+        /* cards end */
+        
+        .bu {
+            margin-top: 1rem;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ln {
+            border-radius: 0%;
+            margin-top: 2rem;
+            padding-top: 14px;
+            height: 50px;
+            margin-bottom: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+        
+        .ln:hover {
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        
+        .n {
+            margin-top: 1%;
+        }
+        
+        .n {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .blog-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding: 20px;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        /* re
+ sponisive design */
+        
+        @media screen and (max-width: 767px) {
+            .cardBox {
+                margin-left: 2.8%;
+                margin-top: 3%;
+                width: 46%;
+            }
+            .card {
+                height: 290px;
+            }
+            .cardBox:last-child {
+                margin-bottom: 3%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .cardBox {
+                width: 95.5%;
+                margin-top: 3rem;
+            }
+            .card {
+                height: 330px;
+            }
+            .parallax {
+                height: 25rem;
+            }
+        }
+        /* view page or detail page */
+        
+        .dt {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5rem;
+            margin-top: 0.4rem;
+        }
+        
+        .ii {
+            margin-top: 1rem;
+        }
+        
+        .mt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ddt {
+            background-color: white;
+            margin-left: 5rem;
+            margin-top: 0.4rem;
+        }
+        
+        .ht {
+            height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .htt {
+            text-align: justify;
+        }
+        
+        .img-thumbnail {
+            height: 21rem;
+            border: none;
+        }
+        
+        .img-thumbnail:hover {
+            height: 22rem;
+            box-shadow: rgba(150, 180, 206, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .dt {
+                margin-left: 0rem;
+                margin-top: 0rem;
+            }
+            .ddt {
+                margin-left: 0rem;
+                margin-top: 0rem;
+            }
+            .htt {
+                margin-top: 4rem;
+            }
+        }
+        /* details page ends here */
+        /* login */
+        
+        .lg {
+            margin-top: 2rem;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: rgba(150, 180, 206, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        /* login */
